@@ -1,0 +1,275 @@
+html {
+    font-family: sans-serif; /*为段落设置字体*/
+    line-height: 1.15; /*以百分比计的行高*/
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);/*webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节。*/
+    }
+body {
+    margin: 0;/*不留边白*/ 
+    padding: 0px;   
+    font-size: 1rem;
+    font-weight: 400;
+    overflow:scroll;/*scroll 内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。*/
+    overflow-x:hidden;/*去掉X轴滑动条也就是页面底部清除滑动条*/
+    text-align: left;/*默认全局文本设置为左边*/ 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";   
+}
+.container {    
+    display: flex;/*使得下面的flex有效*/
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;  /* 设置网页宽度 */
+    min-height: 100vh;
+    flex-direction: column;
+    background: url(E:/WEB前端学习/前端学习/TEST/img/beijing1.png);
+    background-repeat:no-repeat;
+    background: no scroll ;
+    /* 图片填满整个容器 */
+    background-size: cover;
+}
+/* 布局flex */
+header{
+    flex: 1;   
+}
+footer{
+    flex: 1;   
+    background: url(E:/WEB前端学习/前端学习/TEST/img/end1.png);
+    background-repeat:no-repeat;
+    background-size: inherit;
+}
+.main {
+    display: flex;  
+    flex: 1;  
+}
+.main-content {
+    flex: auto;    
+}
+
+nav{
+    float: left;
+    order: -1;
+}
+.header-nav {    
+    margin-bottom: 150px;
+    padding:0px; 
+}
+h1{
+    color:rgb(31, 165, 243);
+}
+/* logo */
+.img-fluid {    
+    float: left;
+    max-width: 100%;
+    height: auto; 
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 20px;    
+}
+/* 导航栏左边全局 */
+#header-left{
+    float: left;
+    width: 400px;
+    height: auto;
+    margin-left:200px;
+    margin-top: 30px;
+    position:absolute;
+}
+/* 导航栏右边全局*/
+#header-right{
+    float: left;
+    width: 600px;
+    height: auto;
+    position:absolute;
+    margin-left: 750px;    
+    margin-top: 10px;
+    margin-right: 20px;
+}
+ul {
+    list-style-type: none; /*list-style-type:none - 移除列表前小标志。*/
+    margin: 0;/*  移除浏览器的默认设置将边距和填充设置为0*/
+    padding: 0;/* 移除浏览器的默认设置将边距和填充设置为0 */
+    /*border: 1px solid #555; 导航栏有边框 必须加上solid ，而且想让每个选项都加上边框就在li ：border-bottom: ;*/
+}
+li {
+    float: left;
+    text-align: center;
+    /* border-bottom: 1px solid #555; */
+}
+
+#header-left li a {
+    
+    display:block;/*显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度*/
+    width: 80px; /*块元素默认情况下是最大宽度。我们要指定一个60像素的宽度*/
+    text-decoration: none;
+    color: snow;
+    
+    /* color: snow;字体颜色 */
+}
+a{
+    /* 去掉连接下划线 */
+    text-decoration: none;
+    text-align: center;
+}
+/* 鼠标移动到选项上修改背景颜色 */
+#header-left li a:hover {
+    color: lightskyblue;
+}
+/*导航栏右边 */
+.nav-right{
+    float: right;
+}
+
+#header-right li form{
+    margin-top: 20px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}    
+#header-right li a {
+    float: right;
+    margin-right: 5px;
+}
+input {   
+    color: #111;
+    background-color:#fff;
+    border-radius: 10px;
+    border: 0px;
+    padding:10px; 
+}   
+/* 底部 */
+.end{
+    color: snow;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.footer-up{
+    text-align:center;
+    margin-top: 30px;
+}
+.table {
+    display:inline-block;　　   
+}
+.footer-down {
+    
+    text-align: center;
+    
+}
+/* 中部 */
+.row{
+    width: 800px;
+    margin-left: 280px;    
+    text-align: left;
+}
+.col{
+    border-top: 1px solid rgb(197, 193, 193);  
+    
+}
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    width: 800px;
+    height: 350px;
+}
+.flex-item{
+    width: 400px;
+    height: 300px;
+    margin: 20px;   
+}
+.flex-item a{
+    background-color:rgb(31, 165, 243);
+    color: snow;
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 20px;
+    box-shadow: 2px 2px 4px 2px#cccccc;
+}
+.flex-item a:hover {
+    color: rgb(130, 132, 134);
+    background-color: #cccccc;
+}
+.flex1-container{
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 60px;
+    flex-direction: column-reverse;
+    font-size: 2.5em;    
+    color: snow;
+}
+.flex1-item{
+    width: 200px;
+    height: 100px;
+    margin: 0px;   
+}
+.flex2-container{
+    display: -webkit-flex;
+    display: flex;
+    width: 800px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: 2px 2px 4px 2px#cccccc;
+}
+.flex2-item{
+    flex: 1;
+    width: 300px;
+    height: 90px;
+    margin: 5px;
+    margin-left: 70px;
+    margin-bottom: 10px; 
+}
+.flex3-container{
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 100px;
+    
+}
+.flex3-item{
+    flex: 1;
+    width: 200px;
+    height: 90px;
+    margin: 5px;
+    padding: 20px;
+    margin-bottom: 10px;   
+}
+.flex3-item a{
+    background-color:rgb(31, 165, 243);
+    color: snow;
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 20px;
+    box-shadow: 2px 2px 4px 2px#cccccc;
+}
+.flex3-item a:hover {
+    color: rgb(130, 132, 134);
+    background-color: #cccccc;
+}
+.flex-article{
+    display: -webkit-flex;    
+    width: 800px;
+    height: 250px;
+}
+article{
+    width: 400px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 200px;
+    box-shadow: 5px 5px  10px #cccccc;
+    background-color: aliceblue;
+}
+
+.article-left{
+    float: left;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.artlcle-right{
+    float: left;
+    margin-top: 30px;
+}
+
+

@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body,.contain{
+    min-height: 100vh;
+}
+/* flex布局 */
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+.content{
+    display: flex;
+    flex:auto ;  
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content aside{
+    height: 100px; 
+    background-color: blue;
+}
+.content article{  
+    flex: auto;  
+    background-color: cadetblue;
+}
+header{
+    height: 80px;
+    background-color: brown;
+}
+footer{
+    height: 400px;
+    background-color:  brown;
+}
+/* 头部 */
+nav{
+    float: left;
+    order: -1;
+}
+.header-nav {    
+    margin-bottom: 150px;
+    padding:0px; 
+}
+/* logo */
+.img-fluid {    
+    float: left;
+    max-width: 100%;
+    height: auto; 
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 20px;    
+}
+/* 导航栏左边全局 */
+#header-left{
+    float: left;
+    width: 400px;
+    height: auto;
+    margin-left:200px;
+    margin-top: 30px;
+    position:absolute;
+}
+/* 导航栏右边全局*/
+#header-right{
+    float: left;
+    width: 600px;
+    height: auto;
+    position:absolute;
+    margin-left: 750px;    
+    margin-top: 10px;
+    margin-right: 20px;
+}
+ul {
+    list-style-type: none; /*list-style-type:none - 移除列表前小标志。*/
+    margin: 0;/*  移除浏览器的默认设置将边距和填充设置为0*/
+    padding: 0;/* 移除浏览器的默认设置将边距和填充设置为0 */
+    /*border: 1px solid #555; 导航栏有边框 必须加上solid ，而且想让每个选项都加上边框就在li ：border-bottom: ;*/
+}
+li {
+    float: left;
+    text-align: center;
+    /* border-bottom: 1px solid #555; */
+}
+
+#header-left li a {
+    
+    display:block;/*显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度*/
+    width: 80px; /*块元素默认情况下是最大宽度。我们要指定一个60像素的宽度*/
+    text-decoration: none;
+    color: snow;
+    
+    /* color: snow;字体颜色 */
+}
+a{
+    /* 去掉连接下划线 */
+    text-decoration: none;
+    text-align: center;
+}
+/* 鼠标移动到选项上修改背景颜色 */
+#header-left li a:hover {
+    color: lightskyblue;
+}
+/*导航栏右边 */
+.nav-right{
+    float: right;
+}
+
+#header-right li form{
+    margin-top: 20px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}    
+#header-right li a {
+    float: right;
+    margin-right: 5px;
+}
+input {   
+    color: #111;
+    background-color:#fff;
+    border-radius: 10px;
+    border: 0px;
+    padding:10px; 
+}   
+/* 尾部 */
+.end{
+    color: snow;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.footer-up{
+    text-align:center;
+    margin-top: 30px;
+}
+.table{
+
+    display:inline-block;　
+}
+.footer-down {
+    
+    text-align: center;
+    
+}

@@ -1,0 +1,52 @@
+body{
+    font-style: initial;
+}
+/* h4{
+    color: rgb(12, 12, 12)!important;
+} */
+p,.item2,.item3,a{
+    color: rgb(61, 60, 59);
+}
+
+body::-webkit-scrollbar {/*有两个滑动条 删掉一个 其他一个还能运行*/
+    display:none;   
+}
+.container-fluid{
+    padding: 10px 30px 30px 30px;
+  }
+
+span{font-weight:bold;} /*字体加粗*/
+.item3 {
+    display:none;
+    border-top:1px dashed rgb(126, 186, 235); 
+    height:50px;
+    width:98%
+}
+.wrapper {position: relative;}
+.col{
+  margin-top: 15px;
+}
+
+.card-text{
+    font-size: small;
+    
+}
+.card_box{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 8px rgb(236, 234, 234);
+}
+.card_box:hover{
+    box-shadow:  1px  5px 10px #888888 ;
+    
+    transition:1s;
+    background-color: rgba(123, 195, 243, 0.219);
+    
+}
+.card_box li:hover{
+    transition:1s;
+    background-color: rgba(123, 195, 243, 0.219);
+}
+.class {
+    color: dodgerblue;
+}
