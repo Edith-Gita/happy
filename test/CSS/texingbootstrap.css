@@ -72,8 +72,10 @@ input{
 
 }
 .bg{
+    background: url(test/img/end1.png);
+    background-repeat:no-repeat;
     
-    background: url(test/img/end1.png) no-repeat center;
+    /*background: url(test/img/end1.png) no-repeat center;*/
     background-size: cover; 
     
 }
