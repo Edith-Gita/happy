@@ -21,7 +21,7 @@ body {
     width: 100%;  /* 设置网页宽度 */
     min-height: 100vh;
     flex-direction: column;
-    background: url("img/beijing1.png");
+    background: url('img/beijing1.png');
     background-repeat:no-repeat;
     background: no scroll ;
     /* 图片填满整个容器 */
