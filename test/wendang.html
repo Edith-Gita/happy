@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 响应式 meta 标签 -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="CSS\texingbootstrap.css">
+    <link rel="stylesheet" href="CSS\wendang.css">
+    <title>文档bootstrap</title>
+</head>
+<body >
+    <div class="container-fluid ">
+        <div id="header" class="row align-items-start ">
+            <div class="col">
+                <!-- 头部 -->
+            <!-- 导航行 -->
+            <!-- Image and text -->
+            <nav class="navbar navbar-expand-xl navbar-dark bg-primary navbar-fixed-top ">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+                    <aside class="main-sidebar">
+                        <section  class="sidebar">
+                            <ul class="sidebar-menu">
+                                <li><a href="WD_zongjianjie.html" target="mainframe">简介</a></li>
+                                <li class="treeview"><a href=""><i class=""></i><span>快速上手</span><i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li ><a href="QuickStart_application.html" target="mainframe" ><i class=""></i>你的第一个应用</a></li>
+                                        <li><a href=""><i class=""></i>路由</a></li>
+                                        <li><a href=""><i class=""></i>管理数据</a></li>
+                                        <li><a href=""><i class=""></i>表单</a></li>
+                                        <li><a href=""><i class=""></i>部署</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">搭建环境</a></li>
+                                <li class="treeview"><a href=""><i class=""></i><span>基本原理</span><i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li ><a href=""><i class=""></i><span>Angular的基本概念</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li ><a href=""><i class=""></i>基本概念简介</a></li>
+                                                <li><a href=""><i class=""></i>模块简介</a></li>
+                                                <li><a href=""><i class=""></i>组件简介</a></li>
+                                                <li><a href=""><i class=""></i>服务于DI简介</a></li>
+                                                <li><a href=""><i class=""></i>后续步骤</a></li>
+                                            </ul>                                        
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>英雄指南</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>简介</a></li>
+                                                <li><a href=""><i></i>应用的“外壳”</a></li>
+                                                <li><a href=""><i></i>1.英雄编辑器</a></li>
+                                                <li><a href=""><i></i>2.显示英雄列表</a></li>
+                                                <li><a href=""><i></i>3.创建特性组件</a></li>
+                                                <li><a href=""><i></i>4.添加服务</a></li>
+                                                <li><a href=""><i></i>5.添加应用内导航</a></li>
+                                                <li><a href=""><i></i>6.从服务器获取数据</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>组件与模板</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>显示数据</a></li>
+                                                <li><a href=""><i></i>模板语法</a></li>
+                                                <li><a href=""><i></i>用户输入</a></li>
+                                                <li><a href=""><i></i>生命周期钩子</a></li>
+                                                <li><a href=""><i></i>组件交互</a></li>
+                                                <li><a href=""><i></i>组件样式</a></li>
+                                                <li><a href=""><i></i>动态组件</a></li>
+                                                <li><a href=""><i></i>Angular元素</a></li>
+                                                <li><a href=""><i></i>属性型指令</a></li>
+                                                <li><a href=""><i></i>结构性指令</a></li>
+                                                <li><a href=""><i></i>管道</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>表单</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>简介</a></li>
+                                                <li><a href=""><i></i>响应式表单</a></li>
+                                                <li><a href=""><i></i>模板驱动表单</a></li>
+                                                <li><a href=""><i></i>表单验证</a></li>
+                                                <li><a href=""><i></i>动态表单</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>Observable与RxJS</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>可观察对象（Obbervable）</a></li>
+                                                <li><a href=""><i></i>RxJS库</a></li>
+                                                <li><a href=""><i></i>Angular中的可观察对象</a></li>
+                                                <li><a href=""><i></i>用法实战</a></li>
+                                                <li><a href=""><i></i>与其他技术的比较</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>NgModules</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>NgModules简介</a></li>
+                                                <li><a href=""><i></i>JS模块 vs NgModule</a></li>
+                                                <li><a href=""><i></i>应用的根模块</a></li>
+                                                <li><a href=""><i></i>常用模块</a></li>
+                                                <li><a href=""><i></i>特性模块的分类</a></li>
+                                                <li><a href=""><i></i>入口组件</a></li>
+                                                <li><a href=""><i></i>特性模块</a></li>
+                                                <li><a href=""><i></i>服务提供商</a></li>
+                                                <li><a href=""><i></i>单例服务</a></li>
+                                                <li><a href=""><i></i>惰性加载的特性模块</a></li>
+                                                <li><a href=""><i></i>共享NgModule</a></li>
+                                                <li><a href=""><i></i>NgModule API</a></li>
+                                                <li><a href=""><i></i>NgModule 常见问题</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>依赖注入</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>Angular依赖注入</a></li>
+                                                <li><a href=""><i></i>多级注入器</a></li>
+                                                <li><a href=""><i></i>DI提供商</a></li>
+                                                <li><a href=""><i></i>DI实战</a></li>
+                                                <li><a href=""><i></i>浏览组件树</a></li>                                               
+                                            </ul>    
+                                        </li>
+                                        <li><a href=""><i class=""></i>HttpClient</a></li>
+                                        <li><a href=""><i class=""></i>路由与导航</a></li>
+                                        <li><a href=""><i class=""></i><span>动画</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>简介</a></li>
+                                                <li><a href=""><i></i>转场与触发器</a></li>
+                                                <li><a href=""><i></i>复杂序列</a></li>
+                                                <li><a href=""><i></i>可复用动画</a></li>
+                                                <li><a href=""><i></i>路由转场动画</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>                                    
+                                </li>
+                                <li class="treeview"><a href=""><i class=""></i><span>其他技术</span><i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li ><a href=""><i class=""></i><span>安全</span></a>                  
+                                        </li>
+                                        <li ><a href=""><i class=""></i><span>国际化（i18n）</span></a>                  
+                                        </li>
+                                        <li ><a href=""><i class=""></i><span>无障碍（a11y）</span></a>                  
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>Service Worker与PWA</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>简介</a></li>
+                                                <li><a href=""><i></i>快速上手</a></li>
+                                                <li><a href=""><i></i>应用外壳</a></li>
+                                                <li><a href=""><i></i>与Service Worker通讯</a></li>
+                                                <li><a href=""><i></i>生产环境下的Service Worker</a></li>
+                                                <li><a href=""><i></i>Service Worker配置</a></li>
+                                            </ul>
+                                        </li>
+                                        <li ><a href=""><i class=""></i><span>服务器渲染</span></a>                  
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>从AngularJS升级</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>升级步骤</a></li>
+                                                <li><a href=""><i></i>更关注性能的升级方式</a></li>
+                                                <li><a href=""><i></i>AngularJS与Angular的概念对照</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>开发Angular库</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>库概念</a></li>
+                                                <li><a href=""><i></i>使用已发布的库</a></li>
+                                                <li><a href=""><i></i>创建库</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>原理图</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>原理图概览</a></li>
+                                                <li><a href=""><i></i>制作原理图</a></li>
+                                                <li><a href=""><i></i>库的原理图</a></li>
+                                                <li><a href=""><i></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=""><span>CLI构建器</span></a></li>
+                                        <li><a href=""><span>Web Worker</span></a></li>
+                                        <li><a href=""><i class=""></i><span>NgModules</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>NgModules简介</a></li>
+                                                <li><a href=""><i></i>JS模块 vs NgModule</a></li>
+                                                <li><a href=""><i></i>应用的根模块</a></li>
+                                                <li><a href=""><i></i>常用模块</a></li>
+                                                <li><a href=""><i></i>特性模块的分类</a></li>
+                                                <li><a href=""><i></i>入口组件</a></li>
+                                                <li><a href=""><i></i>特性模块</a></li>
+                                                <li><a href=""><i></i>服务提供商</a></li>
+                                                <li><a href=""><i></i>单例服务</a></li>
+                                                <li><a href=""><i></i>惰性加载的特性模块</a></li>
+                                                <li><a href=""><i></i>共享NgModule</a></li>
+                                                <li><a href=""><i></i>NgModule API</a></li>
+                                                <li><a href=""><i></i>NgModule 常见问题</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=""><i class=""></i><span>依赖注入</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>Angular依赖注入</a></li>
+                                                <li><a href=""><i></i>多级注入器</a></li>
+                                                <li><a href=""><i></i>DI提供商</a></li>
+                                                <li><a href=""><i></i>DI实战</a></li>
+                                                <li><a href=""><i></i>浏览组件树</a></li>                                               
+                                            </ul>    
+                                        </li>
+                                        <li><a href=""><i class=""></i>HttpClient</a></li>
+                                        <li><a href=""><i class=""></i>路由与导航</a></li>
+                                        <li><a href=""><i class=""></i><span>动画</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>简介</a></li>
+                                                <li><a href=""><i></i>转场与触发器</a></li>
+                                                <li><a href=""><i></i>复杂序列</a></li>
+                                                <li><a href=""><i></i>可复用动画</a></li>
+                                                <li><a href=""><i></i>路由转场动画</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                </li>
+                                <li class="treeview"><a href=""><i class=""></i><span>开发工作流</span><i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li><a href=""><i class=""></i><span>AOT预先编译器</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>预先编译</a></li>
+                                                <li><a href=""><i></i>Angular编译器选项</a></li>
+                                                <li><a href=""><i></i>AOT元数据错误</a></li>
+                                                <li><a href=""><i></i>模板类型检查</a></li>
+                                            </ul>
+                                        </li>
+                                        <li ><a href=""><i class=""></i><span>构建与运行</span></a>                  
+                                        </li>
+                                        <li ><a href=""><i class=""></i><span>使用Bazel进行构建</span></a>                  
+                                        </li>
+                                        <li ><a href=""><i class=""></i><span>测试</span></a>                  
+                                        </li>
+                                        <li ><a href=""><i class=""></i><span>发布</span></a>                  
+                                        </li>                                        
+                                        <li><a href=""><i class=""></i><span>开发工具集成</span><i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href=""><i></i>语言服务</a></li>
+                                            </ul>
+                                        </li>                                      
+                                    </ul>                                    
+                                </li>
+                                <li class="treeview"><a href=""><i class=""></i><span>配置</span><i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li><a href=""><i></i>项目文件结构</a></li>
+                                        <li><a href=""><i></i>工作区配置</a></li>
+                                        <li><a href=""><i></i>npm包</a></li>
+                                        <li><a href=""><i></i>TypeScript配置</a></li>
+                                        <li><a href=""><i></i>浏览器支持</a></li>
+                                    </ul>
+                                </li>
+                                <li class="treeview"><a href=""><i class=""></i><span>发布信息</span><i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li><a href=""><i></i>保持最新</a></li>
+                                        <li><a href=""><i></i>发布实践</a></li>
+                                        <li><a href=""><i></i>升级到第九版</a></li>
+                                        <li><a href=""><i></i>弃用清单</a></li>
+                                        <li><a href=""><i></i>Angular lvy</a></li>
+                                    </ul>
+                                </li>
+                                <li class="treeview"><a href=""><i class=""></i><span>快捷手册</span><i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li><a href=""><i></i>速查表</a></li>
+                                        <li><a href=""><i></i>风格指南</a></li>
+                                        <li><a href=""><i></i>词汇表</a></li>                                        
+                                    </ul>
+                                </li>
+                                <li class="treeview"><a href=""><i class=""></i><span>CLI命令</span><i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li><a href=""><i></i>概览</a></li>
+                                        <li><a href=""><i></i>使用情况分析</a></li>
+                                        <li><a href=""><i></i>ng add</a></li> 
+                                        <li><a href=""><i></i>ng analytics</a></li>
+                                        <li><a href=""><i></i>ng build</a></li>
+                                        <li><a href=""><i></i>ng config</a></li>
+                                        <li><a href=""><i></i>ng deploy</a></li>
+
+                                        <li><a href=""><i></i>ng doc</a></li>
+                                        <li><a href=""><i></i>ng e2e</a></li>
+                                        <li><a href=""><i></i>ng generate</a></li>
+                                        <li><a href=""><i></i>ng help</a></li>
+                                        <li><a href=""><i></i>ng lint</a></li>
+                                        <li><a href=""><i></i>ng new</a></li>
+                                        <li><a href=""><i></i>ng run</a></li>
+                                        <li><a href=""><i></i>ng serve</a></li>
+                                        <li><a href=""><i></i>ng test</a></li>
+                                        <li><a href=""><i></i>ng update</a></li>
+                                        <li><a href=""><i></i>ng version</a></li>
+                                        <li><a href=""><i></i>ng xi18n</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" target="">API参考手册</a></li>
+                                <hr>
+                                <li><a href="">互助问答</a></li>
+                                <li><a href="">官方MATERIAL组件库</a></li>
+                                <li><a href="">NG-ZORRO组件库</a></li>
+                                <li><a href="">NG-ZORRO MOBILE组件</a></li>
+                                <li><a href="">友站：FLUTTR中文</a></li>
+                                <hr>
+                                <li><a href="">stable(v9.0.0)</a></li>
+                            </ul>
+                           
+                        </section>
+                    </aside>
+                    
+                </div>
+                <span  class="open" onclick="openNav()">&#9776; </span>
+                <a class="navbar-brand" href="muban.html" title="Home">
+                    <img src="img\tubiao.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                    NGULAR
+                </a>
+                
+                            
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="texingbootstrap.html">特性<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="wendang.html">文档</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">资源</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">会议</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">博客</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">关于中文版</a>
+                        </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                        <input class="" type="search" placeholder="搜索">
+                        <a href=""><img src="img\Twitter.png" alt="" ></a>
+                        <a href=""><img src="img\GitHub.png" alt=""></a>
+                        </form>
+                    </div>      
+            </nav>
+            </div>
+        </div>
+        <!-- 右侧内容 -->  
+        <div id="main" class="content" >
+            <div class="row align-items-center">
+                <div class="embed-responsive embed-responsive-16by9">
+                    
+                <iframe class="embed-responsive-item" allowfullscreen name="mainframe" src="WD_zongjianjie.html"> /* src加载初始化页面*/
+                </iframe>
+                </div>
+                
+                            
+            </div>
+        </div>
+        <div id="footer" class="row  bg  align-items-end flex-column text-white" >
+                <div class="up col-12">
+                    <div class="row ">
+                        <div class="col"></div>
+                        <div class="col-6  ">  
+                            <table class="table table-borderless text-white">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" >资源</th>
+                                        <th scope="col">帮助</th>
+                                        <th scope="col">  社区</th>
+                                        <th scope="col">多语言</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">关于</th>
+                                        <td>Stack Overflow</td>
+                                        <td>活动</td>
+                                        <td>English Version</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">资源列表</th>
+                                        <td>Gitter</td>
+                                        <td>聚会</td>
+                                        <td>正体中文版</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">宣传资料</th>
+                                        <td>报告问题</td>
+                                        <td>Twitter</td>
+                                        <td>日本语版</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">博客</th>
+                                        <td>行为规范</td>
+                                        <td>GitHub</td>
+                                        <td>한국인</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">使用情况分析</th>
+                                        <td></td>
+                                        <td>做贡献</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>  
+                            </table>  
+                        </div> 
+                        <div class="col"></div>  
+                    </div>
+                </div>
+                <div class="down col-12">
+                    <div class="row ">
+                        <div class="col "></div>
+                        <div class="col-6">
+                            <p class="text-justify">Super-power by Google @2010-2020.代码授权方式：MIT-style.文档授权方式：CC BY 4.0</p>
+                            <p class="text-justify text-center">当前版本：9.0.1-build.76+sha.9ad96c49.</p>
+                        </div>
+                        <div class="col "></div>
+                    </div>                        
+                </div>
+        </div> 
+        
+    
+        
+    
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="lib\jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="lib\wendang.js"></script>
+    <script>
+        $.sidebarMenu($('.sidebar-menu'))
+        </script>
+    <script type="text/javascript">
+        var main = document.getElementById("main");
+        main.style.height = document.documentElement.offsetHeight - 106;
+    </script>
+    
+</body>
+</html>
